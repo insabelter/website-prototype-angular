@@ -6,9 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "install_lib": "npm install \"../library-build/component-library-0.0.1.tgz\"",
-    "del_lib": "cd node_modules && rmdir /component-library /S /Q"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -20,7 +18,7 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
-    "component-library": "file:../library-build/component-library-0.0.1.tgz",
+    "@insabelter/component-library-angular": ">0.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
