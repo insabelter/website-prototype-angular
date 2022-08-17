@@ -1,9 +1,12 @@
-This website contains components from the Angular Component Bibliography Prototype.
-<lib-card [title]="'Animal List'">
-    <lib-tag-input [(tags)]="tags" [placeholder]="'Insert an animal'"></lib-tag-input>
+<h1>Testwebseite</h1>
+<h2>Prototyp der Technologie X</h2>
+
+<lib-card [title]="'Einkaufsliste'">
+    <lib-tag-input [(tags)]="tags" [placeholder]="'Zutat hinzufügen'"></lib-tag-input>
 </lib-card>
 
-<h2>Resulting animals:</h2>
-<ul>
-    <li *ngFor="let tag of tags">{{ tag }}</li>
-</ul>
+<lib-card [title]="'Sortierte Zutaten:'">
+    <ul>
+        <li *ngFor="let tag of sortTags()">{{ tag }}</li>
+    </ul>
+</lib-card>
