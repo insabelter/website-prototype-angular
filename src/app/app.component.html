@@ -1,12 +1,12 @@
 <h1>Testwebseite</h1>
-<h2>Prototyp der Technologie X</h2>
+<h2>Prototyp der Technologie Angular</h2>
 
 <lib-card [title]="'Einkaufsliste'">
-    <lib-tag-input [(tags)]="tags" [placeholder]="'Zutat hinzufügen'"></lib-tag-input>
+    <lib-tag-input [(tags)]="groceries" [placeholder]="'Zutat hinzufügen'"></lib-tag-input>
 </lib-card>
 
 <lib-card [title]="'Sortierte Zutaten:'">
     <ul>
-        <li *ngFor="let tag of sortTags()">{{ tag }}</li>
+        <li *ngFor="let tag of sortGroceries()">{{ tag }}</li>
     </ul>
 </lib-card>

@@ -7,10 +7,10 @@ import { Component, OnChanges, SimpleChanges } from '@angular/core';
 export class AppComponent {
   
   title = 'website-prototype-angular';
-  tags: String[] = ['Mehl', 'Eier', 'Birnen'];
+  groceries: String[] = ['Mehl', 'Eier', 'Birnen', 'Mehl'];
 
-  sortTags() {
-    var sortedTags = [...new Set(this.tags)].sort();
-    return sortedTags;
+  sortGroceries() {
+    var sortedGroceries = [...new Set(this.groceries)].sort();
+    return sortedGroceries;
   }
 }
